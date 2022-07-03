@@ -65,9 +65,11 @@ h3 {
 
 .logo-header {
     color: #000;
-    margin-right: 93px;
 }
 
+.logo-link {
+    margin-right: 93px;
+}
 /* nav */
 
 .nav {
@@ -128,15 +130,17 @@ h3 {
 }
 
 .contact:hover,
-.contact:focus{
+.contact:focus {
     color: var(--accent-color);
 }
 
-.icon-mail:hover {
+.contact:hover .icon-mail,
+.contact:focus .icon-mail {
     fill: var(--accent-color);
 }
 
-.icon-phone:hover {
+.contact:hover .icon-phone,
+.contact:focus .icon-phone {
     fill: var(--accent-color);
 }
 
@@ -152,7 +156,7 @@ h3 {
     url(../images/overlay.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 .hero-title {
@@ -219,7 +223,7 @@ h3 {
 .button.index:hover,
 .button.index:focus {
     color: var(--accent-color);
-    }
+}
 
 /* section portfolio */
 
@@ -415,6 +419,7 @@ border-radius: 0px 0px 4px 4px;
     width: 44px;
     height: 44px;
     border-radius: 50%;   
+    color: var(--primary-bgc);
 }
 
 .icon-team {
@@ -423,11 +428,13 @@ border-radius: 0px 0px 4px 4px;
    fill: #AFB1B8;
 }
 
-.social-item:hover {
+.social-item:hover,
+.social-item:focus {
     background-color: var(--accent-color);
 }
 
-.social-item:hover .icon-team {
+.social-item:hover .icon-team,
+.social-item:focus .icon-team {
     fill: #FFFFFF;
 }
 
@@ -470,16 +477,18 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .icon-client {
-    width: 106px;
-    height: 60px;
+    /* width: 106px;
+    height: 60px; */
     fill: #AFB1B8;
 }
 
-.client-item:hover {
+.client-item:hover,
+.client-item:focus {
     border-color: var(--accent-color);
 }
 
-.client-item:hover .icon-client {
+.client-item:hover .icon-client,
+.client-item:focus .icon-client {
     fill: var(--accent-color);
 }
 
@@ -547,10 +556,12 @@ border-radius: 0px 0px 4px 4px;
     fill: #FFFFFF;
  }
 
- .footer-item:hover {
+ .footer-item:hover,
+ .footer-item:focus {
     background-color: var(--accent-color);
 }
 
-.footer-item:hover .icon-team {
+.footer-item:hover .icon-team,
+.footer-item:focus .icon-team {
     fill: #FFFFFF;
 }
