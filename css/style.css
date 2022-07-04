@@ -67,9 +67,6 @@ h3 {
     color: #000;
 }
 
-.logo-link {
-    margin-right: 93px;
-}
 /* nav */
 
 .nav {
@@ -80,11 +77,17 @@ h3 {
 
 .nav-list {
     display: flex;
+    margin-left: 93px;
 }
 
 .nav-auth {
     display: flex;
     margin-left: auto;
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus {
+    color: var(--accent-color);
 }
 
 .nav-list .item + .item {
@@ -220,10 +223,10 @@ h3 {
     letter-spacing: 0.06em;
 }
 
-.button.index:hover,
+/* .button.index:hover,
 .button.index:focus {
     color: var(--accent-color);
-}
+} */
 
 /* section portfolio */
 
@@ -394,6 +397,7 @@ h3 {
 }
 
 .team .item {
+    background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
@@ -412,7 +416,7 @@ border-radius: 0px 0px 4px 4px;
     margin-left: 10px;
 }
 
-.social-item {
+.team-link {
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -428,13 +432,13 @@ border-radius: 0px 0px 4px 4px;
    fill: #AFB1B8;
 }
 
-.social-item:hover,
-.social-item:focus {
+.team-link:hover,
+.team-link:focus {
     background-color: var(--accent-color);
 }
 
-.social-item:hover .icon-team,
-.social-item:focus .icon-team {
+.team-link:hover .icon-team,
+.team-link:focus .icon-team {
     fill: #FFFFFF;
 }
 
@@ -540,14 +544,18 @@ border-radius: 0px 0px 4px 4px;
     align-items: baseline;
 }
 
-.footer-item {
+
+.footer-link {
     display: flex;
     align-items: center;
     justify-content: center; 
     width: 44px;
     height: 44px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;   
+    border-radius: 50%; 
+}
+.team-social .footer-item + .footer-item {
+    margin-left: 10px;
 }
 
 .icon-footer {
@@ -556,12 +564,12 @@ border-radius: 0px 0px 4px 4px;
     fill: #FFFFFF;
  }
 
- .footer-item:hover,
- .footer-item:focus {
+ .footer-link:hover,
+ .footer-link:focus {
     background-color: var(--accent-color);
 }
 
-.footer-item:hover .icon-team,
-.footer-item:focus .icon-team {
+.footer-link:hover .icon-team,
+.footer-link:focus .icon-team {
     fill: #FFFFFF;
 }
