@@ -223,11 +223,6 @@ h3 {
     letter-spacing: 0.06em;
 }
 
-/* .button.index:hover,
-.button.index:focus {
-    color: var(--accent-color);
-} */
-
 /* section portfolio */
 
 .portfolio {
@@ -335,9 +330,11 @@ h3 {
 .icon-clock,
 .icon-computer,
 .icon-astronaut {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    width: 70px;
    height: 70px;
-   margin: auto;
 }
 
 .title-index {
@@ -360,7 +357,6 @@ h3 {
 
 .work {
     display: flex;
-    /* width: 370px; */
     margin-top: 50px;
 }
 
@@ -399,7 +395,7 @@ h3 {
 .team .item {
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
 }
 .team .item + .item {
     margin-left: 30px;
@@ -466,7 +462,7 @@ border-radius: 0px 0px 4px 4px;
     justify-content: center;
     align-items: center;
 }
-.client-item {
+.client-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -481,18 +477,16 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .icon-client {
-    /* width: 106px;
-    height: 60px; */
     fill: #AFB1B8;
 }
 
-.client-item:hover,
-.client-item:focus {
+.client-link:hover,
+.client-link:focus {
     border-color: var(--accent-color);
 }
 
-.client-item:hover .icon-client,
-.client-item:focus .icon-client {
+.client-link:hover .icon-client,
+.client-link:focus .icon-client {
     fill: var(--accent-color);
 }
 
